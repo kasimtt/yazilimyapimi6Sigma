@@ -1,0 +1,1 @@
+# yazilimyapimi6Sigma
