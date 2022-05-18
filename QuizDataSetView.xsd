@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuizDataSetView" targetNamespace="http://tempuri.org/QuizDataSetView.xsd" xmlns:mstns="http://tempuri.org/QuizDataSetView.xsd" xmlns="http://tempuri.org/QuizDataSetView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuizConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuizConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._6SigmaSoruProgrami.Properties.Settings.GlobalReference.Default.QuizConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="QuizViewTableAdapter" GeneratorDataComponentClassName="QuizViewTableAdapter" Name="QuizView" UserDataComponentName="QuizViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuizConnectionString (Settings)" DbObjectName="Quiz.dbo.QuizView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KonuAdi, UniteAdi, ResimYolu1, Yanlis1, Yanlis2, Yanlis3, Dogru FROM dbo.QuizView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KonuAdi" DataSetColumn="KonuAdi" />
+              <Mapping SourceColumn="UniteAdi" DataSetColumn="UniteAdi" />
+              <Mapping SourceColumn="ResimYolu1" DataSetColumn="ResimYolu1" />
+              <Mapping SourceColumn="Yanlis1" DataSetColumn="Yanlis1" />
+              <Mapping SourceColumn="Yanlis2" DataSetColumn="Yanlis2" />
+              <Mapping SourceColumn="Yanlis3" DataSetColumn="Yanlis3" />
+              <Mapping SourceColumn="Dogru" DataSetColumn="Dogru" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuizDataSetView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QuizDataSetView" msprop:Generator_DataSetName="QuizDataSetView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QuizView" msprop:Generator_RowEvHandlerName="QuizViewRowChangeEventHandler" msprop:Generator_RowDeletedName="QuizViewRowDeleted" msprop:Generator_RowDeletingName="QuizViewRowDeleting" msprop:Generator_RowEvArgName="QuizViewRowChangeEvent" msprop:Generator_TablePropName="QuizView" msprop:Generator_RowChangedName="QuizViewRowChanged" msprop:Generator_RowChangingName="QuizViewRowChanging" msprop:Generator_TableClassName="QuizViewDataTable" msprop:Generator_RowClassName="QuizViewRow" msprop:Generator_TableVarName="tableQuizView" msprop:Generator_UserTableName="QuizView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KonuAdi" msprop:Generator_ColumnPropNameInRow="KonuAdi" msprop:Generator_ColumnPropNameInTable="KonuAdiColumn" msprop:Generator_ColumnVarNameInTable="columnKonuAdi" msprop:Generator_UserColumnName="KonuAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UniteAdi" msprop:Generator_ColumnPropNameInRow="UniteAdi" msprop:Generator_ColumnPropNameInTable="UniteAdiColumn" msprop:Generator_ColumnVarNameInTable="columnUniteAdi" msprop:Generator_UserColumnName="UniteAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResimYolu1" msprop:Generator_ColumnPropNameInRow="ResimYolu1" msprop:Generator_ColumnPropNameInTable="ResimYolu1Column" msprop:Generator_ColumnVarNameInTable="columnResimYolu1" msprop:Generator_UserColumnName="ResimYolu1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Yanlis1" msprop:Generator_ColumnPropNameInRow="Yanlis1" msprop:Generator_ColumnPropNameInTable="Yanlis1Column" msprop:Generator_ColumnVarNameInTable="columnYanlis1" msprop:Generator_UserColumnName="Yanlis1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Yanlis2" msprop:Generator_ColumnPropNameInRow="Yanlis2" msprop:Generator_ColumnPropNameInTable="Yanlis2Column" msprop:Generator_ColumnVarNameInTable="columnYanlis2" msprop:Generator_UserColumnName="Yanlis2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Yanlis3" msprop:Generator_ColumnPropNameInRow="Yanlis3" msprop:Generator_ColumnPropNameInTable="Yanlis3Column" msprop:Generator_ColumnVarNameInTable="columnYanlis3" msprop:Generator_UserColumnName="Yanlis3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dogru" msprop:Generator_ColumnPropNameInRow="Dogru" msprop:Generator_ColumnPropNameInTable="DogruColumn" msprop:Generator_ColumnVarNameInTable="columnDogru" msprop:Generator_UserColumnName="Dogru">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

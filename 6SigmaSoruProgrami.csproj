@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{606F739E-44A5-4306-9C83-E0BF20DDC4E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_6SigmaSoruProgrami</RootNamespace>
+    <AssemblyName>6SigmaSoruProgrami</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkraniSecme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkraniSecme.Designer.cs">
+      <DependentUpon>AdminEkraniSecme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EgzersizYapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgzersizYapForm.Designer.cs">
+      <DependentUpon>EgzersizYapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkranSecmeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkranSecmeForm.Designer.cs">
+      <DependentUpon>OgrenciEkranSecmeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciForm.Designer.cs">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs" />
+    <Compile Include="PersonelDatabase.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSetBitti.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSetBitti.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSetSon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSetSon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSetView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSetView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizSoruİslemleri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizSoruİslemleri.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor.cs" />
+    <Compile Include="RaporDatabase.cs" />
+    <Compile Include="RaporFormucs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporFormucs.Designer.cs">
+      <DependentUpon>RaporFormucs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttumForm.Designer.cs">
+      <DependentUpon>SifremiUnuttumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinavOlmaFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinavOlmaFormu.Designer.cs">
+      <DependentUpon>SinavOlmaFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Soru.cs" />
+    <Compile Include="SoruDataBase.cs" />
+    <Compile Include="SoruEklemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoruEklemeFormu.Designer.cs">
+      <DependentUpon>SoruEklemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SınavSorumlusuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SınavSorumlusuForm.Designer.cs">
+      <DependentUpon>SınavSorumlusuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKayitForm.Designer.cs">
+      <DependentUpon>YeniKayitForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminEkraniSecme.resx">
+      <DependentUpon>AdminEkraniSecme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgzersizYapForm.resx">
+      <DependentUpon>EgzersizYapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEkranSecmeForm.resx">
+      <DependentUpon>OgrenciEkranSecmeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciForm.resx">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RaporFormucs.resx">
+      <DependentUpon>RaporFormucs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttumForm.resx">
+      <DependentUpon>SifremiUnuttumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinavOlmaFormu.resx">
+      <DependentUpon>SinavOlmaFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoruEklemeFormu.resx">
+      <DependentUpon>SoruEklemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SınavSorumlusuForm.resx">
+      <DependentUpon>SınavSorumlusuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKayitForm.resx">
+      <DependentUpon>YeniKayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QuizDataSet11.xsc">
+      <DependentUpon>QuizDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet11.xss">
+      <DependentUpon>QuizDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet2.xsc">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet2.xss">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet21.xsc">
+      <DependentUpon>QuizDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet21.xss">
+      <DependentUpon>QuizDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetBitti.xsc">
+      <DependentUpon>QuizDataSetBitti.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetBitti.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSetBitti.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSetBitti.xss">
+      <DependentUpon>QuizDataSetBitti.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetSon.xsc">
+      <DependentUpon>QuizDataSetSon.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetSon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSetSon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSetSon.xss">
+      <DependentUpon>QuizDataSetSon.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetView.xsc">
+      <DependentUpon>QuizDataSetView.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSetView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSetView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSetView.xss">
+      <DependentUpon>QuizDataSetView.xsd</DependentUpon>
+    </None>
+    <None Include="QuizSoruİslemleri.xsc">
+      <DependentUpon>QuizSoruİslemleri.xsd</DependentUpon>
+    </None>
+    <None Include="QuizSoruİslemleri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizSoruİslemleri.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizSoruİslemleri.xss">
+      <DependentUpon>QuizSoruİslemleri.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
